@@ -17,7 +17,6 @@ public class RedissonConfig {
         Config config = new Config();
         config.useSingleServer()
                 .setAddress("redis://127.0.0.1:6379")
-                // .setPassword(……)
                 .setConnectionPoolSize(64)  // 设置连接池的大小，默认为64
                 .setConnectionMinimumIdleSize(10)  // 设置连接池的最小空闲连接数，默认为10
                 .setIdleConnectionTimeout(10000)  // 设置连接的最大空闲时间（单位：毫秒），超过该时间的空闲连接将被关闭，默认为10000
